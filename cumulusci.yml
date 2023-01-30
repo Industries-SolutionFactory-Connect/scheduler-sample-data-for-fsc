@@ -1,0 +1,28 @@
+minimum_cumulusci_version: '3.68.0.dev2'
+project:
+    name: Sample-Data-for-Financial-Services-Use-Cases---Scheduler
+    package:
+        name: Sample-Data-for-Financial-Services-Use-Cases---Scheduler
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+        prefix_feature: 'feature/'
+        prefix_beta: 'beta/'
+        prefix_release: 'release/'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Sample-Data-for-Financial-Services-Use-Cases---Scheduler/tests
+            options:
+                outputdir: robot/Sample-Data-for-Financial-Services-Use-Cases---Scheduler/results
+
+    robot_testdoc:
+        options:
+            path: robot/Sample-Data-for-Financial-Services-Use-Cases---Scheduler/tests
+            output: robot/Sample-Data-for-Financial-Services-Use-Cases---Scheduler/doc/Sample-Data-for-Financial-Services-Use-Cases---Scheduler_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
