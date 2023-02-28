@@ -1,0 +1,70 @@
+extract:
+  WorkTypeGroupMember:
+    fields:
+    - WorkTypeGroupId
+    - WorkTypeId
+  WorkTypeGroup:
+    fields:
+    - AdditionalInformation
+    - Description
+    - GroupType
+    - IsActive
+    - Name
+  WorkType:
+    fields:
+    - BlockTimeAfterAppointment
+    - BlockTimeAfterUnit
+    - BlockTimeBeforeAppointment
+    - BlockTimeBeforeUnit
+    - DefaultAppointmentType
+    - Description
+    - DurationType
+    - EstimatedDuration
+    - Name
+    - TimeFrameEndUnit
+    - TimeFrameStartUnit
+    - TimeframeEnd
+    - TimeframeStart
+  TimeSlot:
+    fields:
+    - DayOfWeek
+    - EndTime
+    - MaxAppointments
+    - OperatingHoursId
+    - StartTime
+    - Type
+    - WorkTypeGroupId
+  OperatingHours:
+    fields:
+    - Description
+    - Name
+    - TimeZone
+  SkillRequirement:
+    fields:
+    - RelatedRecordId
+    - SkillId
+    - SkillLevel
+  Skill:
+    fields:
+    - Description
+    - DeveloperName
+    - Language
+    - MasterLabel
+  ServiceTerritoryWorkType:
+    fields:
+    - ServiceTerritoryId
+    - WorkTypeId
+  ServiceTerritory:
+    fields:
+    - City
+    - Country
+    - Description
+    - GeocodeAccuracy
+    - IsActive
+    - Latitude
+    - Longitude
+    - Name
+    - PostalCode
+    - State
+    - Street
+    - TypicalInTerritoryTravelTime
